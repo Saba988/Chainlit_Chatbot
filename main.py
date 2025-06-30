@@ -3,6 +3,9 @@ from agents import Agent,Runner,AsyncOpenAI,OpenAIChatCompletionsModel,RunConfig
 from dotenv import load_dotenv,find_dotenv
 import os
 
+
+port = int(os.environ.get("PORT", 8080))
+
 load_dotenv(find_dotenv())
 gemini_apikey=os.getenv("GEMINI_API_KEY")
 
